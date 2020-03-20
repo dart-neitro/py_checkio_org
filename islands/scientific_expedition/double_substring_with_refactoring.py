@@ -207,12 +207,6 @@ def test_SearchDoubleStringUsingBruteForce_is_searching_substring_in_text_for_se
     searcher.text_for_searching = '513'
     assert not searcher.is_searching_substring_in_text_for_searching()
 
-    def search_double_substring(self):
-        while self.is_search_in_progress():
-            if self.is_searching_substring_in_text_for_searching():
-                self.search_increased_substring()
-            self.update_searching_params()
-
 
 def test_SearchDoubleStringUsingBruteForce_search_double_substring():
     searcher = SearchDoubleStringUsingBruteForce('zz1234asd123456')
